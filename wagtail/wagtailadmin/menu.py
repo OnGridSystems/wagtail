@@ -104,6 +104,7 @@ class SubmenuMenuItem(MenuItem):
     template = 'wagtailadmin/shared/menu_submenu_item.html'
 
     """A MenuItem which wraps an inner Menu object"""
+
     def __init__(self, label, menu, **kwargs):
         self.menu = menu
         super(SubmenuMenuItem, self).__init__(label, '#', **kwargs)
